@@ -22,6 +22,13 @@ class SumDifferenceProductQuotientOf2Nos {
     getQuotient() {
         return this.firstNum / this.secondNum;
     }
+
+    displayResult() {
+        console.log(`Sum = ${this.getSum()}`);
+        console.log(`Difference = ${this.getDifference()}`);
+        console.log(`Product = ${this.getProduct()}`);
+        console.log(`Quotient = ${this.getQuotient()}`);
+    }
 }
 
 console.log("Please enter the first number: ");
@@ -31,8 +38,4 @@ console.log("Please enter the second number: ");
 const numY = Number(prompt());
 
 const obj = new SumDifferenceProductQuotientOf2Nos(numX, numY);
-
-console.log(`Sum = ${obj.getSum()}`);
-console.log(`Difference = ${obj.getDifference()}`);
-console.log(`Product = ${obj.getProduct()}`);
-console.log(`Quotient = ${obj.getQuotient()}`);
+obj.displayResult();
